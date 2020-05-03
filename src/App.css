@@ -1,6 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +37,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.newsContainer{
+    height: 93vh;
+    overflow-y: scroll;
+
+}
+
+.newsContainer::-webkit-scrollbar{
+  display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+  
 }
