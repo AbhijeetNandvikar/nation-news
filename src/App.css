@@ -57,7 +57,6 @@
   top:  87%;
   left: 76%;
   z-index: 1;
-  font-size: 50px ;
 }
 
 
@@ -71,5 +70,14 @@
   }
   .card{
     width: 100% !important;
+  }
+  .sButton{
+    border-radius: 50% !important;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top:  87%;
+    left: 76%;
+    z-index: 1;
   }
 }
