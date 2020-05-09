@@ -80,4 +80,7 @@
     left: 76%;
     z-index: 1;
   }
+  .modalOpen{
+    padding: 0px !important;
+  }
 }

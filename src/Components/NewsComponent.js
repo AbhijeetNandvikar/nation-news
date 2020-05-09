@@ -8,7 +8,6 @@ export const NewsContext = createContext() ;
 export class NewsComponent extends Component{
     constructor(props){
         super(props)
-
         this.newsList = '' ;
         fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=72a914f9816040a68ad3920fdf9512e7`)
         .then(response => response.json())
@@ -20,6 +19,7 @@ export class NewsComponent extends Component{
         .catch(err => {
             console.log(err);
         });
+
 		
     }
     searchNews = (query) => {
