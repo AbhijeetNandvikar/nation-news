@@ -2,12 +2,23 @@ import React from 'react';
 import './App.css';
 import Main from './Components/Main'
 import Navigation from './Components/Navigation';
+import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+import About from './Components/About'
+import Contact from './Components/Contact'
 
 function App() {
   return (
     <div className="App">
-        <Navigation />
-        <Main />
+      <Router>
+      <Navigation />
+        <Route path={"/"} exact strict render={()=>{return <Main/>}} />
+        <Route path={"/about"} exact strict render={()=>{return <About/>}} />
+        <Route path={"/contact"} exact strict render={()=>{return <Contact/>}} />
+
+        
+      </Router>
+        
           </div>
   );
 }

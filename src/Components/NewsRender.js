@@ -11,7 +11,7 @@ class NewsRender extends Component {
 		console.log('rendered')
 		console.log(newsList)
 
-        if(true){
+        if(newsList){
 			return(
 				<div className="newsContainer col-md-6 col-12 m-auto">{newsList[0]}</div>
 			)

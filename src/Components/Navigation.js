@@ -13,6 +13,9 @@ import {
     DropdownItem,
     NavbarText
   } from 'reactstrap';
+
+  import { BrowserRouter as Router, Link, NavLink as NavL, Redirect, Prompt} from 'react-router-dom';
+
   
   
 const Navigation = () => {
@@ -27,15 +30,21 @@ const Navigation = () => {
           <NavbarToggler onClick={toggle} />
 
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto " navbar>
               <NavItem>
-                <NavLink href="">Home</NavLink>
+                <NavLink>
+                  <NavL className="text-white" to={'/'} exact>Home</NavL>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">About</NavLink>
+              <NavLink>
+                  <NavL className="text-white" to={'/about'} exact>About</NavL>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Contact Us</NavLink>
+              <NavLink>
+                  <NavL className="text-white" to={'/contact'} exact>Contact</NavL>
+                </NavLink>
               </NavItem>
               
             </Nav>

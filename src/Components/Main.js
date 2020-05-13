@@ -9,7 +9,7 @@ class Main extends Component{
             <div className="main container">
                         <NewsComponent>
                         <Search />
-                <NewsRender />
+                        <NewsRender />
                         </NewsComponent>
 
                 

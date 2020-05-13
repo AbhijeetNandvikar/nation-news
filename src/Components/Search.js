@@ -22,6 +22,8 @@ const Search = (props) =>{
 					searchNews(searchQ) ;
 				
 			}
+
+			// store news query
 			const optionChange = (e) => {
 				newsQ = e.target.selectedOptions[0].value
 				console.log(newsQ)
