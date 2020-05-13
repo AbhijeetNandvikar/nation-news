@@ -67,7 +67,7 @@ const Search = (props) =>{
 										<option value={"corona"} selected>Choose...</option>
 										<option value="corona" >COVID-19</option>
 										<option value="">Top Headlines</option>
-										<option value="business">Economics</option>
+										<option value="economy">Economics</option>
 										<option value="entertainment">Entertainment</option>
 										<option value="sports">Sports</option>
 										<option value="lifestyle">Lifestyle</option>
