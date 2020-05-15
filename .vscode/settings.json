@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.renderWhitespace": "none",
+    "editor.dragAndDrop": false
+}

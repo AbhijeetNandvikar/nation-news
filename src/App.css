@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   height: 100vh;
+  background-color: rgb(236, 241, 248) ;
+
 }
 
 
@@ -57,7 +59,20 @@
   left: 76%;
   z-index: 1;
 }
+.contact{
+  padding-top: 15%;
+  background-color: rgb(236, 241, 248) ;
+  height: 92vh;
+}
 
+.about{
+  padding-top: 5%;
+  background-color: rgb(236, 241, 248) ;
+  height: 92vh;
+}
+i{
+  margin:3px;
+}
 
 @media only screen and (max-width:600px) {
   .container{
