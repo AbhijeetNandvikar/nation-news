@@ -3,5 +3,5 @@
   to = "https://news-nation.netlify.app/news"
   status = 200
   force = true # COMMENT: ensure that we always redirect
-  headers = {Access-Control-Allow-Origin: *}
+  headers = {Access-Control-Allow-Origin = *}
   
