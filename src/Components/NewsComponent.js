@@ -9,7 +9,7 @@ export class NewsComponent extends Component {
     constructor(props) {
         super(props)
         this.newsList = '';
-        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=e37f8ac9358c4dbd900f1a0ba2694e50`)
+        fetch(`https://news-nation.netlify.app/news`)
             .then(response => {
                 console.log(response)
                 return response.json()
@@ -28,7 +28,7 @@ export class NewsComponent extends Component {
 
     }
     searchNews = (query) => {
-        fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=72a914f9816040a68ad3920fdf9512e7`)
+        fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=e37f8ac9358c4dbd900f1a0ba2694e50`)
             .then(response => response.json())
             .then(res => {
                 this.newsList = res.articles.slice()
@@ -41,7 +41,7 @@ export class NewsComponent extends Component {
     }
 
     searcHeadlines = (query) => {
-        fetch(`https://newsapi.org/v2/everything?q=${query + ` india`}&apiKey=72a914f9816040a68ad3920fdf9512e7`)
+        fetch(`https://newsapi.org/v2/everything?q=${query + ` india`}&apiKey=e37f8ac9358c4dbd900f1a0ba2694e50`)
             .then(response => response.json())
             .then(res => {
                 this.newsList = res.articles.slice()
