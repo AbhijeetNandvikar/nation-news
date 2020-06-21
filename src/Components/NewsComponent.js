@@ -70,7 +70,7 @@ export class NewsComponent extends Component {
     }
 
     renderNews = (articles) => {
-        if (articles.length == 0) {
+        if (articles.length === 0) {
             return (
                 <h2>Please povide correct search query</h2>
             )

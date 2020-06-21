@@ -6,7 +6,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
 } from 'reactstrap';
 
 import { NavLink as NavL, } from 'react-router-dom';
