@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -6,15 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from 'reactstrap';
 
-import { BrowserRouter as Router, Link, NavLink as NavL, Redirect, Prompt } from 'react-router-dom';
+import { NavLink as NavL, } from 'react-router-dom';
 
 
 
@@ -31,20 +26,14 @@ const Navigation = () => {
 
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto " navbar>
-            <NavItem>
-              <NavLink>
-                <NavL className="text-white" to={'/'} exact>Home</NavL>
-              </NavLink>
+            <NavItem className="navlink">
+              <NavL className="text-white" to={'/'} exact>Home</NavL>
             </NavItem>
-            <NavItem>
-              <NavLink>
-                <NavL className="text-white" to={'/about'} exact>About</NavL>
-              </NavLink>
+            <NavItem className="navlink">
+              <NavL className="text-white" to={'/about'} exact>About</NavL>
             </NavItem>
-            <NavItem>
-              <NavLink>
-                <NavL className="text-white" to={'/contact'} exact>Contact</NavL>
-              </NavLink>
+            <NavItem className="navlink">
+              <NavL className="text-white" to={'/contact'} exact>Contact</NavL>
             </NavItem>
 
           </Nav>

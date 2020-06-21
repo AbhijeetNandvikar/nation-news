@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from './Components/Main'
 import Navigation from './Components/Navigation';
-import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import About from './Components/About'
 import Contact from './Components/Contact'
 

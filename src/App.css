@@ -73,7 +73,15 @@
 i{
   margin:3px;
 }
-
+.navlink{
+  margin-right: 25px;
+}
+a{
+  text-decoration: none !important;
+}
+.img-size{
+  width: 300px;
+}
 @media only screen and (max-width:600px) {
   .container{
     padding: 10px !important;
@@ -96,5 +104,8 @@ i{
   }
   .modalOpen{
     padding: 0px !important;
+  }
+  .img-size{
+    width: 280px;
   }
 }

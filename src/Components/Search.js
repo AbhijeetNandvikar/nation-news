@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { NewsContext } from './NewsComponent'
 
 
@@ -65,7 +65,7 @@ const Search = (props) => {
 											optionChange(e)
 											toggle()
 										}}>
-											<option value={"corona"} selected>Choose...</option>
+											<option defaultValue="">Choose...</option>
 											<option value="corona" >COVID-19</option>
 											<option value="">Top Headlines</option>
 											<option value="economy">Economics</option>
